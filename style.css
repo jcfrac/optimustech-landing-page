@@ -8,6 +8,7 @@
 :root{
     --fonte-principal:"Open Sans", sans-serif;
     --cor-texto-principal: #667085;
+    --cor-vermelho:  #8E2424;
 }
 
 
@@ -21,17 +22,17 @@ header{
     height: 80px;
     justify-content: space-around;
 }
-.cabecalho__texto{
+.navBar__texto{
     display: flex;
     width: 20%;
     justify-content: space-between;
     font-size: var(--fonte-principal);
 }
-.cabecalho__button{
+.navBar__button{
     width: 15%;
 }
 .button{
-    background-color: #8E2424;
+    background-color: var(--cor-vermelho);
     padding: 10px;
     border-radius: 8px;
     text-decoration: none;
@@ -40,4 +41,27 @@ header{
 .button.login{
     background-color: transparent;
     color: var(--cor-texto-principal);
+}
+
+main{
+    height: auto;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 4em;
+}
+.cabecalho__titulo{
+    color: black;
+    font-weight: 700;
+    font-size: 48px;
+}
+.cabecalho > p{
+    color: var(--cor-vermelho);
+}
+.cabecalho__texto{
+    max-width: 35rem;
 }
