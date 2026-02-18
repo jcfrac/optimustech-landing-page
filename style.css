@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-principal:"Open Sans", sans-serif;
+    --cor-texto-principal: #667085;
+}
+
+
+body{
+    color: var(--cor-texto-principal);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-around;
+}
+.cabecalho__texto{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    font-size: var(--fonte-principal);
+}
+.cabecalho__button{
+    width: 15%;
+}
+.button{
+    background-color: #8E2424;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+.button.login{
+    background-color: transparent;
+    color: var(--cor-texto-principal);
+}
