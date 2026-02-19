@@ -65,3 +65,24 @@ main{
 .cabecalho__texto{
     max-width: 35rem;
 }
+.metricas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.metricas__conteudo{
+   display: flex;
+   flex-direction: column;
+    width: 20%;
+    padding: 4em 5em;
+    gap: 1em;
+}
+.metricas__conteudo > h1{
+    color: var(--cor-vermelho);
+    font-size: 38px;
+    font-weight: 700px;
+}
+.metricas__conteudo > h4{
+    color: black;
+    font-size: 18px;
+}
